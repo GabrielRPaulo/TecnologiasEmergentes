@@ -51,34 +51,36 @@
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
 </head>
 <body>
-    <h1>Instrumentos cirúrgicos</h1>
-    <p>São ferramentas essenciais utilizadas em procedimentos cirúrgicos para ajudar a realizar tarefas específicas, como cortar, agarrar, suturar ou cauterizar tecidos. Aqui está uma visão geral dos tipos mais comuns de instrumentos cirúrgicos e suas funções:</p>
+    <h1>Mandíbula Humana</h1>
+    <p>A mandíbula é o único osso móvel do crânio, essencial para funções como mastigação e fala. É sustentada por músculos fortes que permitem movimentos amplos e variados.</p>
     
     <!-- Modelo 3D -->
     <model-viewer id="meuModelo" src="scene.gltf" alt="Modelo 3D de uma glândula tireoide" shadow-intensity="1" camera-controls auto-rotate ar>
-       <!-- Hotspots interativos para exibir informações -->
-       <button slot="hotspot-handles" data-position="0.0 0.3 0.1" data-normal="0 0 1" data-visibility-attribute="visible" data-info="Porta-agulhas: Usado para segurar uma agulha circular, com a qual o tecido pode ser fundido mesmo nas profundezas do local da operação.">1. 🔍</button>
-       <!-- Adicione os demais hotspots aqui -->
+       
     </model-viewer>
 
     <!-- Botões de interação -->
     <div class="button-container">
         <button id="toggleRotate">Pausar Rotação</button>
-        <button onclick="window.location.href='/osso03/index.html'">Ir para Página 1</button>
-        <button onclick="window.location.href='/osso05/index.html'">Ir para Página 2</button>
-        <button onclick="showBoneInfo('info1')">Informação do Osso 1</button>
-        <button onclick="showBoneInfo('info2')">Informação do Osso 2</button>
+        <button onclick="window.location.href='/TecnologiasEmergentes/osso03/index.html'">Voltar para os Tecidos da Face</button>
+        <button onclick="window.location.href='/TecnologiasEmergentes/osso05/index.html'">Conheça o Globo Ocular</button>
+        <button onclick="showBoneInfo('info1')">Curiosidades sobre a Madíula</button>
+        <button onclick="showBoneInfo('info2')">Ultinas descobertas</button>
     </div>
 
     <!-- Textos de informações -->
     <div id="info1" class="info-text">
-        <h1>Informações sobre o Osso 1</h1>
-        <p>Detalhes específicos sobre a função e anatomia do osso 1. Este osso é importante para...</p>
+        <h1>Mandíbula: Mobilidade e Função Essencial para a Mastigação e a Fala</h1>
+        <p>1- A mandíbula humana é um dos ossos mais fortes do corpo, sendo capaz de aplicar força suficiente para quebrar alimentos duros.</p>
+        <p>2- As diferenças anatômicas na mandíbula podem influenciar a aparência facial e o alinhamento dental.</p>
+        <p>3- Nos homens, a mandíbula geralmente é mais angular, enquanto nas mulheres, tende a ser mais arredondada.</p>
+        <p>4- A articulação temporomandibular (ATM) é a conexão que permite o movimento da mandíbula.</p>
+        <p>5- Estudos revelam que a mandíbula adapta-se ao desgaste dentário ao longo da vida.</p>
     </div>
 
     <div id="info2" class="info-text">
-        <h1>Informações sobre o Osso 2</h1>
-        <p>Estrutura, localização e função do osso 2. Ele desempenha um papel essencial em...</p>
+        <h1>Ultinas descobertas</h1>
+        <p>No estudo da mandíbula, a diferenciação entre gêneros também diminui com o tempo, mas a mobilidade e a função na mastigação e na fala continuam sendo essenciais. Descobertas recentes sobre articulações mandibulares mostram que sua adaptação mecânica desempenha um papel crucial na eficiência mastigatória e em como a mandíbula se ajusta para lidar com diferentes tipos de dieta e hábitos alimentares.</p>
     </div>
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>

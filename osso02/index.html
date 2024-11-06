@@ -51,34 +51,38 @@
     <script src="https://unpkg.com/@webcomponents/webcomponentsjs@2.1.3/webcomponents-loader.js"></script>
 </head>
 <body>
-    <h1>Instrumentos cirúrgicos</h1>
-    <p>São ferramentas essenciais utilizadas em procedimentos cirúrgicos para ajudar a realizar tarefas específicas, como cortar, agarrar, suturar ou cauterizar tecidos. Aqui está uma visão geral dos tipos mais comuns de instrumentos cirúrgicos e suas funções:</p>
+    <h1>Crânio Feminino</h1>
+    <p> Tal como o crânio masculino, o crânio feminino protege o cérebro e contribui para a forma da cabeça, sendo um ponto de ancoragem para músculos faciais.</p>
     
     <!-- Modelo 3D -->
     <model-viewer id="meuModelo" src="scene.gltf" alt="Modelo 3D de uma glândula tireoide" shadow-intensity="1" camera-controls auto-rotate ar>
-       <!-- Hotspots interativos para exibir informações -->
-       <button slot="hotspot-handles" data-position="0.0 0.3 0.1" data-normal="0 0 1" data-visibility-attribute="visible" data-info="Porta-agulhas: Usado para segurar uma agulha circular, com a qual o tecido pode ser fundido mesmo nas profundezas do local da operação.">1. 🔍</button>
+       
        <!-- Adicione os demais hotspots aqui -->
     </model-viewer>
 
     <!-- Botões de interação -->
     <div class="button-container">
         <button id="toggleRotate">Pausar Rotação</button>
-        <button onclick="window.location.href='/osso01/index.html'">Ir para Página 1</button>
-        <button onclick="window.location.href='/osso03/index.html'">Ir para Página 2</button>
-        <button onclick="showBoneInfo('info1')">Informação do Osso 1</button>
-        <button onclick="showBoneInfo('info2')">Informação do Osso 2</button>
+        <button onclick="window.location.href='/TecnologiasEmergentes/osso01/index.html'">Voltar para o masculino</button>
+        <button onclick="window.location.href='/TecnologiasEmergentes/osso03/index.html'">Conheça os Tecidos da Face</button>
+        <button onclick="showBoneInfo('info1')">Curiosidade sobre o crânio feminino</button>
+        <button onclick="showBoneInfo('info2')">Ultinas descobertas</button>
     </div>
 
     <!-- Textos de informações -->
     <div id="info1" class="info-text">
-        <h1>Informações sobre o Osso 1</h1>
-        <p>Detalhes específicos sobre a função e anatomia do osso 1. Este osso é importante para...</p>
+        <h1>Estrutura e Proteção do Crânio Feminino</h1>
+        <p>1-O crânio feminino tende a ser mais leve e delicado, com uma curvatura mais suave na região da testa, que é menos pronunciada do que no masculino.</p>
+        <p>2- A mandíbula feminina é tipicamente mais arredondada e estreita, o que dá um formato mais suavizado ao contorno facial.
+        </p>
+        <p>3- O crânio feminino apresenta um perfil frontal mais suavizado, diferindo da inclinação mais acentuada nos homens.</p>
+        <p>4- A habilidade de um crânio resistir a forças externas é surpreendente, sendo mais resistente em adultos jovens.</p>
+        <p>5- A mudança nas diferenças estruturais cranianas entre homens e mulheres ao longo dos séculos sugere impacto de fatores ambientais, como a nutrição.</p>
     </div>
 
     <div id="info2" class="info-text">
-        <h1>Informações sobre o Osso 2</h1>
-        <p>Estrutura, localização e função do osso 2. Ele desempenha um papel essencial em...</p>
+        <h1>As ultimas descobertas sobre o crânio feminino</h1>
+        <p>Estudos recentes forneceram insights intrigantes sobre crânios femininos, especialmente com descobertas em paleontologia e antropologia forense. Uma descoberta significativa foi a reconstrução do crânio "Shanidar Z", uma mulher Neandertal descoberta na Caverna de Shanidar, no Iraque, datada de cerca de 75.000 anos atrás. A análise de seus dentes e estrutura óssea, especialmente os ossos menores do braço e proteínas do esmalte dental, confirmou seu sexo e idade, indicando que ela provavelmente estava na casa dos quarenta anos - uma longevidade considerável para a época. Esta descoberta ajuda os antropólogos a entender melhor as características físicas e os papéis sociais das mulheres Neandertais, destacando suas potenciais contribuições para rituais de sepultamento e vida comunitária, conforme sugerido por achados de pólen e outros artefatos ao redor de restos de Neandertais na mesma caverna.</p>
     </div>
 
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
